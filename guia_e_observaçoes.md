@@ -3,6 +3,7 @@
 ### criaçao do projeto
 - começar com o comando `npx create-next-app --example with-styled-components` no terminal para criar a pasta do projeto
 - em seguida, o terminal vai pedir o nome do projeto
+- para iniciar o projeto se usa `npm run dev`
 - depois de instalar, ao lado de **ready** vai ter o link pra pagina do projeto `http://localhost:3000`
 
 
@@ -12,6 +13,8 @@
 
 **codigo do inicio do projeto**
 ```
+//index.js
+
 // com react criamos nossas proprias tags
 
 import styled from 'styled-components'
@@ -36,3 +39,6 @@ export default function Home() {
   // colocando parametro prop a funçao Title recebe o 'My page'
 }
 ```
+
+Google fontes https://fonts.google.com/
+
