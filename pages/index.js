@@ -9,6 +9,8 @@ import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GithubCorner from '../src/components/GithubCorner'
 import Head from 'next/head'
+import Input from '../src/components/Input'
+import Button from '../src/components/Button'
 
 // const backgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -60,8 +62,9 @@ export default function Home() {
               router.push(`/quiz?name=${name}`)
               console.log('Success')
             }}>
-              <input
-                onChange={function (infosDoEvento) {
+              <Input
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => {
                   console.log(infosDoEvento.target.value);
                   // quando ocorrer mudança no input a funçao é chamada e essa chama o consolelog e o setName
                   // State
@@ -70,11 +73,12 @@ export default function Home() {
                   // seta o novo valor do state
                   setName(infosDoEvento.target.value);
                 }}
-                placeholder="nome"
+                placeholder="nome" value={name}
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0 }> 
-                Jogar 
-              </button>
+              <Button type="submit" disabled={name.length === 0 }> 
+                {`Jogar ${name}`} 
+              </Button>
             </form>
             
           </Widget.Content>
