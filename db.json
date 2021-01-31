@@ -5,25 +5,133 @@
     "description": "Teste os seus conhecimentos sobre astronomia e deixe Galileu, Einsten e Carl Sagan orgulhosos.",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://static.todamateria.com.br/upload/tr/an/translacao.gif",
+        "title": "Qual o planeta mais quente do sistema solar?",
+        "description": " ",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Marte",
+          "Mercurio",
+          "Vênus",
+          "Terra",
+          "Saturno"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://acegif.com/wp-content/uploads/Jupiter.gif",
+        "title": "Qual o nome de uma das luas de Júpiter que tem o mesmo nome de um continente da Terra e que há evidências de que possui oceanos com mais água do que em nosso planeta?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+           "Oceania",
+           "África",
+           "América",
+           "Europa",
+           "Ásia"
+        ]
+      },
+      {
+        "image": "https://img.ibxk.com.br/2018/01/18/1-18145846522209.gif",
+        "title": "Qual a distância entre a Terra e o Sol aproximadamente?",
+        "description": " ",
+        "answer": 4,
+        "alternatives": [
+          "0,5 ano luz",
+          "340 mil km",
+          "800 milhões de km",
+          "4,5 bilhões de km",
+          "150 milhões de km"
+        ]
+      },
+      {
+        "image": "https://pa1.narvii.com/7076/7e633ba5ab31245948be87dc1f28e6adaff9fb6cr1-480-270_hq.gif",
+        "title": "Qual o diâmetro médio de uma estrela de Neutrôns?",
+        "description": "",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "Cerca de 20 km, como uma cidade",
+          "Cerca de 1,4 milhõa de km, como o nosso Sol",
+          "Cerca de 100 mil km, como um planeta gasoso ",
+          "Cerca de 400 milhões de km, como uma gigante vermelha",
+          "Cerca de 6 bilhões de km, como nosso sistema solar"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/c2/35/1e/c2351e80bb577bc3d7b9babd7843919b.gif",
+        "title": "Qual grande galáxia esta mais próxima e futuramente vai se chocar com a nossa?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+          "Galáxia charuto",
+          "Galáxia do sombreiro",
+          "Galáxia do olho negro",
+          "Andrômeda",
+          "Via Láctea"
+        ]
+      },
+      {
+        "image": "https://acegif.com/wp-content/uploads/pluto.gif",
+        "title": "Qual sonda espacial visitou Plutão em 2015?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+          "Curiosity",
+          "New Horizons",
+          "Voyager 2",
+          "Cassini-Huygens",
+          "Juno"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/93/70/52/9370524b5b84464632bd69917ce4cc2a.gif",
+        "title": "Em que época começaram a perceber que a Terra não é plana?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+          "Nunca, pois ela é plana",
+          "Século XVII com Johannes Kepler, figura chave na Revolução Cientifica",
+          "século VI a.C. com Pitágoras, embora a maioria dos filósofos defendesse o modelo de Terra plana",
+          "Século XVI com Nicolau Copérnico que também propos a teoria Heliocêntrica",
+          "Século XVII com Galileu Galilei com a invenção dos telescópios"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/c9a8b2872b3e8b0386fd5a71be78fa4f/tumblr_ooj2q92wXu1rnbafjo1_400.gifv",
+        "title": "Qual a melhor definição de o que é um buraco negro?",
+        "description": "",
+        "answer": 4,
+        "alternatives": [
+          "Até hoje não há consenso na comunidade cientifica do que é um buraco negro",
+          "Uma estrela que fracassou e não adquiriu massa suficiente para fazer fusão nuclear e por isso não emite luz",
+          "Um buraco mesmo, um tipo de ralo no espaço que suga matéria",
+          "Um tipo de portal que quando é atravessado leva a outros pontos do universo, esse atalho também é chamado de ponte de Einsten-Rosen",
+          "Uma estrela que colapsou e devido a sua grande massa e densidade a velocidade de escape se torna maior que a da luz"
+        ]
+      },
+      {
+        "image": "https://media1.tenor.com/images/64f57ce18f0fcabe3ce0b9c81ac4264d/tenor.gif?itemid=14806439",
+        "title": "Há quanto tempo ocorreu o Big Bang?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+          "13,8 bilhões de anos",
+          "1,38 bilhões de anos",
+          "3,8 milhões de anos",
+          "13,8 milhões de anos",
+          "3,8 bilhões de anos"
+        ]
+      },
+      {
+        "image": "https://blog.locaweb.com.br/wp-content/uploads/2016/07/homem-na-lua.gif",
+        "title": "Qual o nome do foguete usado para ir a Lua na missão Ápolo 11?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+          "V-2",
+          "VLS",
+          "Saturno V",
+          "Viking",
+          "Falcon Heavy"
         ]
       }
     ],

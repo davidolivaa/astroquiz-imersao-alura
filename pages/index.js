@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'
+import { motion } from 'framer-motion';
 import {useRouter} from 'next/router'
 
 import db from '../db.json'
 import Widget from '../src/components/Widget'
+//import Link from '../src/components/Link';
 import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
@@ -39,13 +41,22 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>AstroQuiz - imersão alura</title>
+        <title>AluraQuiz - {db.title}</title>
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap" rel="stylesheet"></link>
       </Head>
       <QuizContainer>
       <QuizLogo />
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
             <h1>{db.title}</h1>
           </Widget.Header>
@@ -65,13 +76,12 @@ export default function Home() {
               <Input
                 name="nomeDoUsuario"
                 onChange={(infosDoEvento) => {
-                  console.log(infosDoEvento.target.value);
+                  //console.log(infosDoEvento.target.value);
+                  setName(infosDoEvento.target.value);
+                  // seta o novo valor do state
                   // quando ocorrer mudança no input a funçao é chamada e essa chama o consolelog e o setName
                   // State
-                  // name = infosDoEvento.target.value;
-
-                  // seta o novo valor do state
-                  setName(infosDoEvento.target.value);
+                  // name = infosDoEvento.target.value;                  
                 }}
                 placeholder="nome" value={name}
                 value={name}
@@ -84,15 +94,35 @@ export default function Home() {
           </Widget.Content>
         </Widget>
 
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
-            <p>lorem ipsum dolor sit amet...</p>
+            
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer
+          as={motion.footer}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        />
       </QuizContainer>
+      
+
     </QuizBackground>
   )
   
