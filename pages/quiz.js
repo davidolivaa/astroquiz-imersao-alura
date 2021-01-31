@@ -144,7 +144,7 @@ function QuestionWidget({
             Confirmar
           </Button>
           {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {isQuestionSubmited && !isCorrect && <p>Você errou!   Alternativa correta: {question.answer+1}</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
